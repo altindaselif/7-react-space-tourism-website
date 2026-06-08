@@ -1,0 +1,45 @@
+.mainTitle {
+  grid-column: 1 / span 2;
+  font: var(--tp-5);
+  letter-spacing: var(--tp-5-letter-spacing);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.mainTitleNumber {
+  opacity: 25%;
+  font: var(--tp-5b);
+  letter-spacing: var(--tp-5b-letter-spacing);
+}
+
+@media (max-width: 48em) {
+  .mainTitle {
+    font: var(--tp-5-tablet);
+    letter-spacing: var(--tp-5-tablet-letter-spacing);
+    justify-self: start;
+    text-align: left;
+    grid-column: 1;
+  }
+
+  .mainTitleNumber {
+    font: var(--tp-5b-tablet);
+    letter-spacing: var(--tp-5b-tablet-letter-spacing);
+  }
+}
+
+@media (max-width: 24em) {
+  .mainTitle {
+    font: var(--tp-6-mobile);
+    letter-spacing: var(--tp-6-mobile-letter-spacing);
+    justify-self: center;
+    text-align: center;
+  }
+
+  .mainTitleNumber {
+    font: var(--tp-5b-mobile);
+    letter-spacing: var(--tp-5b-mobile-letter-spacing-letter-spacing);
+  }
+}

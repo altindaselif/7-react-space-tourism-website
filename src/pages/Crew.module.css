@@ -1,0 +1,141 @@
+.crewContentContainer {
+  height: 100%;
+  padding-bottom: 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.crewContentPreTitle {
+  opacity: 50%;
+  font: var(--tp-4);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  margin-top: auto;
+}
+
+.crewContentTitle {
+  font: var(--tp-3);
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.crewContentText {
+  color: var(--blue-300);
+  font: var(--tp-9);
+}
+
+.crewIndicators {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: auto;
+}
+
+.crewIndicator {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0.17;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.crewIndicator:hover {
+  opacity: 0.5;
+}
+
+.crewIndicator.active {
+  opacity: 1;
+}
+
+.crewImgContainer {
+  height: 50rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.crewImg {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+
+  mask-image: linear-gradient(to bottom, black 77%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 77%, transparent 100%);
+}
+
+@media (max-width: 48em) {
+  .crewMainGrid {
+    padding-bottom: 0;
+    gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .crewContentContainer {
+    width: 100%;
+    max-width: 51.2rem;
+    padding: 0;
+  }
+
+  .crewContentPreTitle {
+    font: var(--tp-4-tablet);
+  }
+
+  .crewContentTitle {
+    font: var(--tp-3-tablet);
+  }
+
+  .crewContentText {
+    font: var(--tp-9-tablet);
+  }
+
+  .crewContentText {
+    margin-bottom: 4.8rem;
+  }
+
+  .crewIndicators {
+    justify-content: center;
+    gap: 1.6rem;
+  }
+
+  .crewIndicator {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .crewImg {
+    width: 45rem;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+@media (max-width: 24em) {
+  .crewMainGrid {
+    padding-bottom: 0;
+  }
+
+  .crewContentContainer {
+    width: 100%;
+    max-width: 51.2rem;
+    padding: 0;
+  }
+
+  .crewContentPreTitle {
+    font: var(--tp-4-mobile);
+  }
+
+  .crewContentTitle {
+    font: var(--tp-3-mobile);
+  }
+
+  .crewContentText {
+    font: var(--tp-9-mobile);
+  }
+
+  .crewImg {
+    width: 27rem;
+  }
+}

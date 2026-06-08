@@ -1,0 +1,133 @@
+:root {
+  /* Colors */
+  --white: #fff;
+  --blue-900: #0b0d17;
+  --blue-300: #d0d6f9;
+
+  /* Typography - Font Family */
+  --font-family-bellefair: "Bellefair", serif;
+  --font-family-barlow-con: "Barlow Condensed", sans-serif;
+  --font-family-barlow: "Barlow", sans-serif;
+
+  /* Text Presets */
+  /* Weight Size/Line-Height Family */
+  --tp-1: 400 14.4rem/17.2rem var(--font-family-bellefair);
+  --tp-1-mobile: 400 8rem/9.2rem var(--font-family-bellefair);
+  --tp-2: 400 10rem/11.5rem var(--font-family-bellefair);
+  --tp-2-tablet: 400 8rem/9.6rem var(--font-family-bellefair);
+  --tp-2-mobile: 400 5.6rem/6.4rem var(--font-family-bellefair);
+  --tp-3: 400 5.6rem/6.4rem var(--font-family-bellefair);
+  --tp-3-tablet: 400 4rem/5.2rem var(--font-family-bellefair);
+  --tp-3-mobile: 400 2.4rem/3.2rem var(--font-family-bellefair);
+  --tp-4: 400 3.2rem/3.7rem var(--font-family-bellefair);
+  --tp-4-tablet: 400 2.4rem/3.2rem var(--font-family-bellefair);
+  --tp-4-mobile: 400 1.8rem/2.1rem var(--font-family-bellefair);
+  --tp-5: 400 2.8rem/3.4rem var(--font-family-barlow-con);
+  --tp-5-letter-spacing: 0.4rem;
+  --tp-5-tablet: 400 2rem/3rem var(--font-family-barlow-con);
+  --tp-5-tablet-letter-spacing: 0.15rem;
+  --tp-5b: 700 2.8rem/3.4rem var(--font-family-barlow-con);
+  --tp-5b-letter-spacing: 0.47rem;
+  --tp-5b-tablet: 700 2rem/3rem var(--font-family-barlow-con);
+  --tp-5b-tablet-letter-spacing: 0.15rem;
+  --tp-5b-mobile: 700 1.6rem/2.1rem var(--font-family-barlow-con);
+  --tp-5b-mobile-letter-spacing: 0.15rem;
+  --tp-6: 400 2.8rem/3.2rem var(--font-family-bellefair);
+  --tp-6-mobile: 400 1.6rem/1.9rem var(--font-family-barlow-con);
+  --tp-6-mobile-letter-spacing: 0.24rem;
+  --tp-7: 400 1.4rem/1.7rem var(--font-family-barlow-con);
+  --tp-7-letter-spacing: 0.2rem;
+  --tp-8: 400 1.6rem/1.9rem var(--font-family-barlow-con);
+  --tp-8-letter-spacing: 0.2rem;
+  --tp-8-mobile: 400 1.4rem/1.5rem var(--font-family-barlow-con);
+  --tp-8-mobile-letter-spacing: 0.15rem;
+  --tp-8b: 700 1.6rem/1.9rem var(--font-family-barlow-con);
+  --tp-8b-letter-spacing: 0.27rem;
+  --tp-9: 400 1.8rem/3.2rem var(--font-family-barlow);
+  --tp-9-tablet: 400 1.6rem/3rem var(--font-family-barlow);
+  --tp-9-mobile: 400 1.5rem/2.7rem var(--font-family-barlow);
+
+  /* Spacing */
+  --spacing-1600: 12.8rem;
+  --spacing-1200: 9.6rem;
+  --spacing-1000: 8rem;
+  --spacing-800: 6.4rem;
+  --spacing-600: 4.8rem;
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
+  --spacing-50: 0.4rem;
+  --spacing-25: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--white);
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- COMMON STYLES --- */
+.main-grid {
+  padding: 4.8rem 16.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem 3.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+/* --- COMMON STYLES --- */
+
+@media (max-width: 48em) {
+  .main-grid {
+    padding: 4rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 24em) {
+  .main-grid {
+    padding: 2.4rem;
+  }
+}

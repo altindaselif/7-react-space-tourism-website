@@ -1,0 +1,151 @@
+.destMainGrid {
+  row-gap: 12.8rem;
+}
+
+.destImgContainer {
+  justify-self: center;
+  align-self: center;
+}
+
+.destImg {
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+}
+
+.destContentContainer {
+  padding: 0 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.destNavbar {
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.destNavbarItem {
+  height: 100%;
+  list-style: none;
+}
+
+.destNavbarButton {
+  height: 100%;
+  color: var(--blue-300);
+  font: var(--tp-8);
+  letter-spacing: var(--tp-8-letter-spacing);
+  text-transform: uppercase;
+
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.destNavbarButton:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.destNavbarButton.active {
+  color: var(--white);
+  border-bottom-color: var(--white);
+}
+
+.destContentTitle {
+  font: var(--tp-2);
+  text-transform: uppercase;
+}
+
+.destContentText {
+  color: var(--blue-300);
+  font: var(--tp-9);
+  padding-bottom: 4rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.25);
+}
+
+.destStatsContainer {
+  width: 100%;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  gap: 2.4rem;
+}
+
+.destStatContainer {
+  flex: 1;
+}
+
+.destStatTitle {
+  color: var(--blue-300);
+  font: var(--tp-7);
+  letter-spacing: var(--tp-7-letter-spacing);
+  margin-bottom: 1.2rem;
+}
+
+.destStatValue {
+  font: var(--tp-6);
+}
+
+@media (max-width: 48em) {
+  .destMainGrid {
+    gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .destImg {
+    max-width: 30rem;
+  }
+
+  .destContentContainer {
+    width: 100%;
+    max-width: 51.4rem;
+    padding: 0;
+
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .destContentTitle {
+    font: var(--tp-2-tablet);
+  }
+
+  .destContentText {
+    font: var(--tp-9-tablet);
+    padding-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .destMainGrid {
+    gap: 5.2rem;
+  }
+
+  .destImg {
+    max-width: 15rem;
+  }
+
+  .destContentContainer {
+    max-width: 32.7rem;
+  }
+
+  .destNavbarButton {
+    font: var(--tp-8-mobile);
+    letter-spacing: var(--tp-8-mobile-letter-spacing);
+  }
+
+  .destContentTitle {
+    font: var(--tp-2-mobile);
+  }
+  .destContentText {
+    font: var(--tp-9-mobile);
+  }
+
+  .destStatsContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

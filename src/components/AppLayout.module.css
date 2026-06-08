@@ -1,0 +1,59 @@
+.appContainer {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.homeBody {
+  background-image: url("/images/home/background-home-desktop.jpg");
+}
+
+.destinationBody {
+  background-image: url("/images/destination/background-destination-desktop.jpg");
+}
+
+.crewBody {
+  background-image: url("/images/crew/background-crew-desktop.jpg");
+}
+
+.technologyBody {
+  background-image: url("/images/technology/background-technology-desktop.jpg");
+}
+
+@media (max-width: 48em) {
+  .homeBody {
+    background-image: url("/images/home/background-home-tablet.jpg");
+  }
+
+  .destinationBody {
+    background-image: url("/images/destination/background-destination-tablet.jpg");
+  }
+
+  .crewBody {
+    background-image: url("/images/crew/background-crew-tablet.jpg");
+  }
+
+  .technologyBody {
+    background-image: url("/images/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media (max-width: 24em) {
+  .homeBody {
+    background-image: url("/images/home/background-home-mobile.jpg");
+  }
+
+  .destinationBody {
+    background-image: url("/images/destination/background-destination-mobile.jpg");
+  }
+
+  .crewBody {
+    background-image: url("/images/crew/background-crew-mobile.jpg");
+  }
+
+  .technologyBody {
+    background-image: url("/images/technology/background-technology-mobile.jpg");
+  }
+}
